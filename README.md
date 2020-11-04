@@ -10,9 +10,9 @@ wx-cache-proxy是多进程，基于中心化的代理，后端支持多种缓存
 ## 安装
 ```shell
 yum -y install automake  libtool autoreconf aclocal
-git clone 
-cd 
-./configure --prefix=/data/twemproxy
+git clone https://github.com/tal-tech/wx-cache-proxy.git
+cd wx-cache-proxy
+./configure --prefix=/data/wx-cache-proxy
 make -j 4
 make install
 ```
@@ -29,3 +29,14 @@ make install
 - -o wx-cache-proxy主日志
 - -e etcd配置文件
 - -L 请求在proxy追踪日志
+
+### trace.conf
+```shell
+{
+     "dept_id": "部门id",
+     "app_name": "业务名称",
+     "log_filename": "/path/to/log",
+     "room": "机房",
+     "slow_threshold":1
+}
+```
