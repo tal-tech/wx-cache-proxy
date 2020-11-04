@@ -1,0 +1,14 @@
+autoscan: warning: missing AC_CHECK_FUNCS([localeconv]) wanted by: 
+	src/tw_etcd/cJSON.c:251
+autoscan: warning: missing AC_CHECK_FUNCS([strtol]) wanted by: 
+	src/nc_conf.c:1486
+autoscan: warning: missing AC_CHECK_FUNCS([uname]) wanted by: 
+	src/nc.c:186
+autoscan: warning: missing AC_CHECK_HEADERS([locale.h]) wanted by: 
+	src/tw_etcd/cJSON.c:48
+autoscan: warning: missing AC_FUNC_STRTOD wanted by: 
+	src/tw_etcd/cJSON.c:324
+autoscan: warning: missing AC_TYPE_MODE_T wanted by: 
+	src/nc_conf.c:1486
+	src/nc_server.h:106
+	src/nc_conf.h:63

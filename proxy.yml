@@ -1,0 +1,14 @@
+proxy:
+  listen: 0.0.0.0:15821
+  hash: fnv1a_64
+  distribution: ketama
+  redis: true
+  redis_db: 0
+  server_retry_timeout: 2000
+  redis_auth: "123456"
+  server_failure_limit: 3
+  backlog: 1024
+  timeout: 2000
+  server_connections: 3
+  servers:
+   - 10.90.100.13:6379:1 server1
